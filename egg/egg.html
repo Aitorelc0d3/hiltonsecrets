@@ -1,0 +1,137 @@
+<html>
+	<head>
+	<title>egg</title>
+	</head>
+<script>
+var passcode = ""
+var audio = new Audio("jumpscare.mp3");
+var lockaudio = new Audio("unlocked.mp3");
+function checker()
+{
+
+	if (passcode == "13310")
+	{ 
+	
+		lockaudio.play();
+	
+		setTimeout(() => {
+			
+			location.replace("secret/secret.html")
+			
+			}, 1500);
+			
+	}
+	if (passcode == "1987")
+	{ 
+	
+		lockaudio.play();
+		
+		setTimeout(() =>
+			{
+			
+			location.replace("https://www.youtube.com/watch?v=S-SnfN8Gn3I&pp=ygUWd2FzIHRoYXQgdGhlIGJpdGUgb2YgOA%3D%3D");
+			
+			}, 1500);
+			
+	}
+}
+function oneInput()
+{
+
+passcode=passcode+"1";
+
+}
+function twoInput()
+{
+
+passcode=passcode+"2";
+
+}
+function threeInput()
+{
+
+passcode=passcode+"3";
+
+}
+function fourInput()
+{
+
+passcode=passcode+"4";
+
+}
+function fiveInput()
+{
+
+passcode=passcode+"5";
+
+}
+function sixInput()
+{
+
+passcode=passcode+"6";
+
+}
+function sevenInput()
+{
+
+passcode=passcode+"7";
+
+}
+function eightInput()
+{
+
+passcode=passcode+"8";
+
+}
+function nineInput()
+{
+
+passcode=passcode+"9";
+
+}
+function zeroInput()
+{
+
+passcode=passcode+"0";
+
+}
+function getout()
+{
+
+location.replace("https://aitor.webcindario.com");
+
+}
+function creep()
+{
+
+alert("get out");
+audio.play();
+document.body.style.backgroundColor="#000000";
+
+}
+
+</script>
+	<body background="">
+	
+		<center>
+			<img src="pass.png" border="0" usemap="#Map">
+<map name="Map">
+  <area shape="rect" coords="9,9,93,90" onClick="oneInput(); checker();">
+  <area shape="rect" coords="119,11,197,88" onClick="twoInput(); checker();">
+  <area shape="rect" coords="224,5,301,85" onClick="threeInput(); checker();">
+  <area shape="rect" coords="12,116,91,196" onClick="fourInput(); checker();">
+  <area shape="rect" coords="116,119,199,196" onClick="fiveInput(); checker();">
+  <area shape="rect" coords="225,116,296,192" onClick="sixInput(); checker();">
+  <area shape="rect" coords="11,222,92,305" onClick="sevenInput(); checker();">
+  <area shape="rect" coords="119,224,199,299" onClick="eightInput(); checker();">
+  <area shape="rect" coords="222,222,304,299" onClick="nineInput(); checker();">
+  <area shape="rect" coords="121,327,201,408" onClick="zeroInput(); checker();">
+  </map>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br>
+			<img src="stop here.png" id="creepyimage" onClick="creep(); setTimeout(getout, 2000);">
+		</center>
+	
+	</body>
+	
+</html>

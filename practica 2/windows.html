@@ -1,0 +1,80 @@
+<html>
+
+<head>
+<title>Windows XP</title>
+</head>
+<script>
+usernames=["Aitor", "Admin", "Guest", "?"];
+passwords=["a20072007", "Ikas2018%19", "", "?"];
+var loggedaudio = new Audio("logged.wav");
+var wrongaudio = new Audio ("wrong.wav");
+var shutaudio = new Audio("Shutdown.wav");
+function verify()
+{
+
+
+for ( x=0; x<usernames.length; x++)
+	//alert(usernames[x]); (tester)
+		if ( username.value == usernames[x] && passwordtyping.value == passwords[x])
+			{
+				
+				loggedaudio.play();
+				
+			}
+			else	
+			{
+			
+				wrongaudio.play();
+			
+			}
+}
+function shut()
+{
+	username.style.visibility="hidden";
+	passwordtyping.style.visibility="hidden";
+	SDButton.style.visibility="hidden";
+	ok.style.visibility="hidden";
+	RGButton.style.visibility="hidden"
+	document.body.background="windowshut.jpg";
+	shutaudio.play();
+	setTimeout(() => {
+				
+				location.replace("../index.html");
+				
+				}, 3000);
+
+}
+function regist()
+{
+
+usernames.push(username.value);
+passwords.push(passwordtyping.value);
+
+
+}
+</script>
+	
+<body background="login.png">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<table width="1200" border="0" align="center">
+  <tr>
+    <th scope="col"><input type="text" id="username" style="width:525; height:45"/></th>
+  </tr>
+  <tr>
+    <th scope="row"><input type="password" id="passwordtyping" style="width:525; height:45"/></th>
+  </tr>
+  <tr>
+    <th scope="row" align="left"><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="button" style="width:200; height:45" value="OK" id="ok" onClick="verify();">
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+								<input type="button" style="width:200; height:45" value="Shut Down" id="SDButton" onClick="shut();">
+						
+								<input type="button" style="width:200; height:45" value="Register" id="RGButton" onClick="regist();">
+	</th>
+  </tr>
+</table>
+	
+	
+	
+</body>
+
+</html>

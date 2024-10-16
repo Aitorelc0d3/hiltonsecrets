@@ -1,0 +1,64 @@
+<html>
+	<head>
+
+		<title>Cal culo dora</title>
+	
+	</head>
+<script>
+
+function addition()
+{
+
+result.value=parseInt(num1.value)+parseInt(num2.value);
+
+}
+function subtraction()
+{
+
+result.value=num1.value-num2.value;
+
+}
+function multiplication()
+{
+
+result.value=num1.value*num2.value;
+
+}
+function divition()
+{
+
+result.value=num1.value/num2.value;
+
+}
+</script>
+<body background="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Rotating_earth_%28large%29.gif/200px-Rotating_earth_%28large%29.gif">
+
+	<div align="center">
+	
+		<div style=" background:url(https://gifdb.com/images/high/beautiful-3d-square-spiral-shdzlkwzvapph3zv.gif) center; width:200; height:400;" align="center">
+		
+			value 1 :<input type="text" id="num1" /><br>
+			
+			value 2 :<input type="text" id="num2" /><br><br>
+			
+			<font size="+2">result :</font><input type="text" id="result" disabled="disabled" /><br><br>
+			
+			<img src="../practica 1/istockphoto-1408603725-612x612.jpg" width="100" height="100" border="0" usemap="#Map" /><br><br><br><br><br><br>
+			
+			<font face="Comic Sans MS" size="+3">CalculAitor</font>
+			
+			<map name="Map">
+				<area shape="rect" coords="6,5,48,45" onClick="addition()">
+				<area shape="rect" coords="52,5,94,45" onClick="subtraction()">
+				<area shape="rect" coords="5,46,48,94" onClick="multiplication()">
+				<area shape="rect" coords="54,49,94,93" onClick="divition()">
+			</map>
+		</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br>
+	<a href="../index.html"><img src="goback.gif"></a>
+</body>
+	
+
+	
+</html>

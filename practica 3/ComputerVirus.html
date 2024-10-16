@@ -1,0 +1,106 @@
+
+<html>
+	<head>
+	
+		<title>Computer Viruses</title>
+	
+	</head>
+	
+<script>
+description=
+["Bonzi Buddy was a Spyware well known in 1999 for acting like an asistant, similar to clippy from Windows XP but with an outstanding range of things he could do. But as any other spyware, what it really did behind the scene's record your passwords, bank information, claiming it could buy things online for you so you didn't have to compromise that information, and even record you if you had a camera."
+, "MEMZ is a really dangerous virus, it acts instantly when opened at it starts opening windows and saturating your computer's ram and processor. Then, it shuts your computer and erases every file, and edits your bios so you can not repair it installing windows again, and resulting in a screen with the famus Nyan Cat meme when booted. This virus was created as a hoax by Leurak for the danooct1's Viewer-Made Malware series in 2016. As a curiosity, this virus can nowadays be neutralized thanks to the advancements in computer RAM storage and processing power. However, it's highly probable that if you run it would find a way to trash your PC."
+, "YouAreAnIdiot is a webpage originaly named youdontknowwhoiam.org, wich as similar as the MEMZ virus is, it makes 6 pop ups for every time you try to close 1 window with duplicates of itself until you restart your pc, that completely fixes the issue. The content of this page consist on a intermitent white and black background, 3 smiley faces and above them a text saying -you are an idiot- as showed in the gif. The creator of this page is unknown and it was created in 2002."
+, "ILoveYou was an email spreading virus that made you send the an email with the message I Love You and a -LOVELETTER- attached, that was actually the script that runned to access your contacts list and keep spreading, as in any other aspects, this virus is completely inofensive."];
+
+descimage=["BB.gif", "V4gVk7.gif", "YAAI.gif", "cybersecurity-history-iloveyou-1.png"];
+
+x=0;
+
+var exitaudio = new Audio("return.wav");
+function change()
+{
+			if ( x <= 0)
+			{
+				
+				x=0;
+				
+			}
+			if ( x >= 4)
+			{
+				
+				x=3;
+								
+			}
+			
+			information.value=description[x];
+			showcase.src=descimage[x];
+}
+function lefty()
+{
+
+x=x-1;
+
+}
+function righty()
+{
+
+x=x+1;
+
+}
+function exit()
+{
+
+	exitaudio.play();
+	
+		setTimeout(() => {
+			
+			location.replace("../index.html")
+			
+			}, 500);
+	
+}
+</script>
+	
+	<body background="bg.jpg" style="height:740;" bgcolor="#009966">
+		
+		<div align="center">
+		
+			<input type="button" value="<<" id="LButton" onClick="lefty(); change();">
+			&emsp;&emsp;&emsp;&emsp;
+			<input type="button" value=">>"id="RButton" onClick="righty(); change();">
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<img src="close.png" border="0" usemap="#forexitMap" id="forexit">
+			<map name="forexitMap">
+    <area shape="rect" coords="101,6,142,41" onClick="exit();">
+	</map>
+				
+			<br>
+			<br>
+			<div align="center">
+	<table width="500" border="0">
+			  <tr>
+					<th scope="col">
+					
+						<img src="BB.gif" id="showcase">
+						
+					</th>
+					
+					<th scope="col">
+						<textarea id="information" disabled="disabled" style="width:700; height:250; text-align:justify;">
+Bonzi Buddy was a Spyware well known in 1999 for acting like an asistant, similar to clippy from Windows XP but with an outstanding range of things he could do. But as any other spyware, what it really did behind the scene's record your passwords, bank information, claiming it could buy things online for you so you didn't have to compromise that information, and even record you if you had a camera.
+						</textarea>
+						
+						
+					</th>
+					
+			  </tr>
+			  
+	</table>
+
+			
+		
+		</div>
+	</body>
+	
+</html>
