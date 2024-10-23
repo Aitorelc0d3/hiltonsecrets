@@ -1,0 +1,81 @@
+<html>
+
+	<head>
+		<title>Surprise</title>
+	</head>
+	
+<script>
+f1=0;
+f2=0;
+f3=0;
+function reveal(x)
+{
+
+	if (x==1)
+	{
+		if (cb1.checked)
+		{
+			
+			frst.src="vertical.png";
+			f1=0;
+			
+		}
+		else
+		{
+	
+		frst.src="horizontal.png";
+		f1=1;
+		
+		}
+	
+	}
+	
+	if (x==2)
+	{
+	
+		if (cb2.checked)
+		{
+		snd.src="vertical.png";
+		f2=0;
+		}
+		else
+		{
+		snd.src="horizontal.png";
+		f2=1;
+		}
+		
+	}
+	if (x==3)
+	{
+	
+			if (cb3.checked)
+			{
+			trd.src="horizontal.png";
+			f3=1;
+			}
+			else
+			{
+			trd.src="vertical.png";
+			f3=0;
+			}
+			
+	}
+}
+function check()
+{
+	if (f1==1 && f2==1 && f3==1)
+	{
+		alert("all lines connected");
+	}
+}
+</script>
+
+	<body background="bg.jpeg">
+	<center>
+		<img src="vertical.png" id="frst" /><img src="vertical.png" id="snd" /><img src="vertical.png"  id="trd" /><br />
+	
+		<input type="checkbox" id="cb1" checked="checked" onClick="reveal(1); check();" /><input type="checkbox" checked="checked" id="cb2"	onclick="reveal(2); check();" /><input type="checkbox" id="cb3" onClick="reveal(3); check();" />	
+	</center>
+	<a href="../index.html"><img src="back.gif"></a>
+	</body>
+</html>
