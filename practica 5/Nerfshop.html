@@ -1,0 +1,310 @@
+<html>
+	<head>
+	
+		<title >(0v0) Nerf Shop (0v0)</title>
+	
+	</head>
+<script>
+now=1;
+lever=1;
+{
+	setInterval (() =>
+	{		
+
+
+			setTimeout(() =>
+						{
+							document.title="(-v0) Nerf Shop (-v0)";
+						
+						}, 500);
+			setTimeout(() =>
+						{
+						
+							document.title="(0v0) Nerf Shop (0v0)";
+
+						}, 1000);	
+	}, 1000);
+}
+
+function addmoney()
+{
+	pricetext.value=(parseInt(cuantitya.value)*12)+(parseInt(cuantityb.value)*5)+(parseInt(cuantityc.value)*20)+(parseInt(cuantityd.value)*30)+(parseInt(cuantitye.value)*27)+(parseInt(cuantityf.value)*30)+(parseInt(cuantityg.value)*75)+(parseInt(cuantityh.value)*50)+(parseInt(cuantityi.value)*120)
+}
+function additem(x)
+{
+
+	if (x==1)
+		{
+		
+		cuantitya.value=parseInt(cuantitya.value)+1;
+		
+		}
+	if (x==2)
+		{
+		
+		cuantityb.value=parseInt(cuantityb.value)+1;
+		
+		}
+	if (x==3)
+		{
+		
+		cuantityc.value=parseInt(cuantityc.value)+1;
+		
+		}
+	if (x==4)
+		{
+		
+		cuantityd.value=parseInt(cuantityd.value)+1;
+		
+		}
+	if (x==5)
+		{
+		
+		cuantitye.value=parseInt(cuantitye.value)+1;
+		
+		}
+	if (x==6)
+		{
+		
+		cuantityf.value=parseInt(cuantityf.value)+1;
+		
+		}
+	if (x==7)
+		{
+		
+		cuantityg.value=parseInt(cuantityg.value)+1;
+		
+		}
+	if (x==8)
+		{
+		
+		cuantityh.value=parseInt(cuantityh.value)+1;
+		
+		}
+	if (x==9)
+		{
+		
+		cuantityi.value=parseInt(cuantityi.value)+1;
+		
+		}
+
+}
+function remitem(x)
+{
+
+	if (x==1)
+		{
+		
+		cuantitya.value=parseInt(cuantitya.value)-1;
+			if (parseInt(cuantitya.value)<=0)
+				{
+					cuantitya.value=0;
+				}
+		
+		}
+	if (x==2)
+		{
+		
+		cuantityb.value=parseInt(cuantityb.value)-1;
+			if (parseInt(cuantityb.value)<=0)
+				{
+					cuantityb.value=0;
+				}
+		
+		}
+	if (x==3)
+		{
+		
+		cuantityc.value=parseInt(cuantityc.value)-1;
+			if (parseInt(cuantityc.value)<=0)
+				{
+					cuantityc.value=0;
+				}
+		}
+	if (x==4)
+		{
+		
+		cuantityd.value=parseInt(cuantityd.value)-1;
+			if (parseInt(cuantityd.value)<=0)
+				{
+					cuantityd.value=0;
+				}
+		
+		}
+	if (x==5)
+		{
+		
+		cuantitye.value=parseInt(cuantitye.value)-1;
+			if (parseInt(cuantitye.value)<=0)
+				{
+					cuantitye.value=0;
+				}
+		
+		}
+	if (x==6)
+		{
+		
+		cuantityf.value=parseInt(cuantityf.value)-1;
+			if (parseInt(cuantityf.value)<=0)
+				{
+					cuantityf.value=0;
+				}
+		
+		}
+	if (x==7)
+		{
+		
+		cuantityg.value=parseInt(cuantityg.value)-1;
+			if (parseInt(cuantityg.value)<=0)
+				{
+					cuantityg.value=0;
+				}
+		}
+	if (x==8)
+		{
+		
+		cuantityh.value=parseInt(cuantityh.value)-1;
+			if (parseInt(cuantityh.value)<=0)
+				{
+					cuantityh.value=0;
+				}
+		
+		}
+	if (x==9)
+		{
+		
+		cuantityi.value=parseInt(cuantityi.value)-1;
+			if (parseInt(cuantityi.value)<=0)
+				{
+					cuantityi.value=0;
+				}
+		}
+
+}
+</script>
+
+	<body background="bg.png">
+	
+			
+		<div align="center">
+			<img src="logo.gif" onMouseOver=""><br><br><br>
+			<table width="1280" height="1800" border="5" bgcolor="#00CCCC" bordercolor="#33FF00">
+  <tr>
+    <th scope="col">
+	
+	<img src="Nerf N-Strike Elite Disruptor (revolver).jpg" width="300" height="200"><br>
+	<div align="justify"><font face="Bahnschrift Condensed" size="+1">
+	The Nerf N-Strike Elite Disruptor is a rotating chamber-based gun that can
+	shoot up to 6 rounds of nerf darts, it works with a resort mechanism that it <br>
+	can be loaded by pulling teh top back piece of the gun backwards.
+	</font>
+	<input type="button" id="minusitem1" value="-" onClick="remitem(1); addmoney();">
+	<textarea id="cuantitya"  readonly="readonly" style="resize: none; width:30; height:30;">0</textarea>
+	<input type="button" id="plusitem1" value="+" onClick="additem(1); addmoney();">
+	</div>
+	
+	</th>
+    <th scope="col"><img src="Nerf N-Strike Jolt (basica).jpg" width="300" height="200"><br>
+	<div align="justify">
+	<font face="Bahnschrift Condensed" size="+1">
+	The Nerf N-Strike Jolt is one of the cheapest, simplest, but functional spring mechanism<br>
+	gun, just pull the lever situated on the bottom of the gun after inserting a nerf dart and<br>
+	you'll be ready to shoot the gun.
+	<input type="button" id="minusitem1" value="-" onClick="remitem(2); addmoney();">
+	<textarea id="cuantityb"  readonly="readonly" style="resize: none; width:30; height:30;">0</textarea>
+	<input type="button" id="plusitem1" value="+" onClick="additem(2); addmoney();">
+	</font>
+	</div></th>
+    <th scope="col"><img src="Nerf N-Strike Elite Sharpfire (PLD).png" width="300" height="200"><br>
+	<div align="justify">
+	<font face="Bahnschrift Condensed" size="+1">
+	The Nerf N-Strike Elite Sharpfire is a sophisticated version of the Nerf N-Strike Jolt, with<br>
+	a high precision noozle that provides the user with accuracy and range.
+	</font>
+	<input type="button" id="minusitem1" value="-" onClick="remitem(3); addmoney();">
+	<textarea id="cuantityc"  readonly="readonly" style="resize: none; width:30; height:30;">0</textarea>
+	<input type="button" id="plusitem1" value="+" onClick="additem(3); addmoney();">
+	</div></th>
+  </tr>
+  <tr>
+    <th scope="row"><img src="Nerf N-Elite Titan (Minigun).png" width="300" height="200"><br>
+	<div align="justify">
+	<font face="Bahnschrift Condensed" size="+1">
+	The Nerf N-Elite Titan is a machine gun with a really high RPM that allows for the effective<br>
+	cleaning of a room with up to 60 rounds per magazine.&emsp;
+	</font>
+	<input type="button" id="minusitem1" value="-" onClick="remitem(4); addmoney();">
+	<textarea id="cuantityd"  readonly="readonly" style="resize: none; width:30; height:30;">0</textarea>
+	<input type="button" id="plusitem1" value="+" onClick="additem(4); addmoney();">
+	</div></th>
+    <td align="center"><img src="Nerf Stryfe (semiautomatic).jpg" width="300" height="200"><br>
+	<div align="justify">
+	<font face="Bahnschrift Condensed" size="+1">
+	The Nerf Stryfe is the perfect option if you want a comfortable grip, and a quick prime<br>
+	of the trigger with no delay when shooting, control areas like never before and go without<br>
+	reloading for the 10 rounds this gun has.
+	</font>
+	<input type="button" id="minusitem1" value="-" onClick="remitem(5); addmoney();">
+	<textarea id="cuantitye"  readonly="readonly" style="resize: none; width:30; height:30;">0</textarea>
+	<input type="button" id="plusitem1" value="+" onClick="additem(5); addmoney();">
+	</div></td>
+    <td align="center"><img src="Needler (Halo gun).png"  width="300" height="200"><br>
+	<div align="justify">
+	<font face="Bahnschrift Condensed" size="+1">
+	The Needler is a gun from the series Halo, now transformed into the perfect gun to confuse<br>
+	enemies and strike them with great force with a 1 J resort that allows for quick takedowns.
+	</font>
+	<input type="button" id="minusitem1" value="-" onClick="remitem(6); addmoney();">
+	<textarea id="cuantityf"  readonly="readonly" style="resize: none; width:30; height:30;">0</textarea>
+	<input type="button" id="plusitem1" value="+" onClick="additem(6); addmoney();">
+	</div></td>
+  </tr>
+  <tr>
+    <th scope="row" bgcolor="#C7D700"><img src="ONE Ultra (premiun machine gun).png" width="300" height="200"><br>
+	<div align="justify">
+	<font face="Bahnschrift Condensed" size="+1">
+	This is the One Ultra, a refined version of the Stryfe that haves 5 times the capacity 2 times<br>
+	the striking power and 3 times the precision, aswell as a high commodity handle that allows <br>
+	hitting a target for various angles without barely any drawback.&emsp;
+	</font>
+	<input type="button" id="minusitem1" value="-" onClick="remitem(7); addmoney();">
+	<textarea id="cuantityg"  readonly="readonly" style="resize: none; width:30; height:30;">0</textarea>
+	<input type="button" id="plusitem1" value="+" onClick="additem(7); addmoney();">
+	</div></th>
+    <td align="center" bgcolor="#C7D700"><img src="Negotiator Doomlands (premium revolver).png" width="300" height="200"><br>
+	<div align="justify">
+	<font face="Bahnschrift Condensed" size="+1">
+	For commodity, we took the time to reduce the Disruptors and his darts size to<br>
+	convert it into a handheld gun that works perfectly with stealth and accuracy thanks<br>
+	to its extended grip.
+	</font>
+	<input type="button" id="minusitem1" value="-" onClick="remitem(8); addmoney();">
+	<textarea id="cuantityh"  readonly="readonly" style="resize: none; width:30; height:30;">0</textarea>
+	<input type="button" id="plusitem1" value="+" onClick="additem(8); addmoney();">
+	</div></td>
+    <td align="center" bgcolor="#990000"	><img src="Funny gun.jpg" width="300" height="200"><br>
+	<div align="justify">
+	<font face="Bahnschrift Condensed" size="+1">
+	This is our most expensive gun, directly imported from the United States of America<br>
+	allows for definitive shots to terminate the enemy quickly and get the control over...,
+	anything.
+	</font>
+	<input type="button" id="minusitem1" value="-" onClick="remitem(9); addmoney();">
+	<textarea id="cuantityi"  readonly="readonly" style="resize: none; width:30; height:30;">0</textarea>
+	<input type="button" id="plusitem1" value="+" onClick="additem(9); addmoney();">
+	</div></td>
+  </tr>
+  <tr>
+    <th colspan="3" scope="row" align="center">price:&emsp;<textarea id="pricetext" readonly="readonly" style="resize: none;">0</textarea>€</th>
+  </tr>
+</table>
+<img src="bundle.png">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<center>
+<img src="ads.png">
+</center>
+
+	
+	</body>
+	
+</html>
